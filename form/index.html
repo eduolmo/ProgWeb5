@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <main id="main">
+        <h1 id="title">Cadastrar Usuário</h1>
+
+        <form id="form" action="index.html" method="post">
+            
+            <h2> <div class="etapa">1</div> Dados Pessoais</h2>
+
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome">
+
+            <label for="email">Email: </label>
+            <input type="email" id="email">
+
+            <label for="senha">Senha: </label>
+            <input type="password" id="senha">
+
+            <label for="confirma">Confirmar Senha: </label>
+            <input type="password" id="confirma">
+
+            <label for="idade">Idade: </label>
+            <div>
+                <input type="radio" name="idade" id="acima_17" value="acima_17">
+                <label for="acima_17" class="idade">Acima de 17</label>
+                <br>
+                <input type="radio" name="idade"id="abaixo_17" value="abaixo_17">
+                <label for="abaixo_17" class="idade">Abaixo ou igual a 17</label>
+            </div>
+
+            <h2> <div class="etapa">2</div> Perfil</h2>
+
+            <label for="descricao">Descrição: </label>
+            <textarea id="descricao" cols="30" rows="5"></textarea>
+            
+            <label for="perfil">Perfil trabalho: </label>
+            <select id="perfil">
+                <option value="" selected >Escolha...</option>
+                <option value="front">Front-End Developer</option>
+                <option value="back">Back-End Developer</option>
+                <option value="fullstack">Full Stack Developer</option>
+            </select>
+
+            <label for="interesse">Interesses: </label>
+            <div>
+                <input type="checkbox" value="programador">
+                <label for="programador">Programador</label>
+                <br>
+                <input type="checkbox" value="design">
+                <label for="design">Design</label>
+                <br>
+                <input type="checkbox" value="analista">
+                <label for="analista">Analista</label>
+            </div> 
+            
+
+            <button type="submit">ENVIAR</button>
+
+        </form>
+
+    </main>
+
+</body>
+</html>
