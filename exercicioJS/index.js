@@ -1,4 +1,3 @@
-
 let calcular1 = document.querySelector('#calcular1')
 calcular1.addEventListener('click', () => {
     let idade = document.querySelector('#atual').value
@@ -52,16 +51,17 @@ ativar.addEventListener('click', () => {
     let limite = document.querySelector('#limite').value
     let div = document.querySelector('#repeticao')
     
+    div.innerHTML = ''
+
     for(i = 0; i < limite; i++){
         let string = ''
         for(j = 0; j <= i; j++){
             string += j+1
         }
-        let linha = document.createElement('div')
-        linha.innerHTML = string
-        document.body.appendChild(linha)
+        //let linha = document.createElement('div')
+        //linha.innerHTML = string
+        div.innerHTML += string + '<br>'
+        //document.body.appendChild(linha)
     }
     
 })
-
-
