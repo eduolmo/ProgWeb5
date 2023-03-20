@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+
+button{
+    background-color: rgb(177, 243, 255);
+    border-color: rgb(70, 129, 255);
+    border-radius: 10px;
+    padding: 10px;
+    width: 170px;
+}
+
+#conteudo{
+    background-color: lightblue;
+    border-radius: 10px;
+    width: 90%;
+    height: 80vh;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#botaoAqui{
+    margin: 20px;
+}
+
+#pessoas{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pessoa{
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
