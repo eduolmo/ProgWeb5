@@ -37,7 +37,7 @@ autenticar.addEventListener('click',() => {
         aviso2.innerHTML = 'Senha deve ser preenchida!'
         aviso2.style.color = 'red'
     }
-    else if(senha.value.lenght < 6 || senha.value.lenght > 30){
+    else if(senha.value.length < 6 || senha.value.length > 30){
         senha.style.borderColor = 'red'
         aviso2.innerHTML = 'Senha deve ter entre 6 a 30 caracteres!'
         aviso2.style.color = 'red'
@@ -46,7 +46,6 @@ autenticar.addEventListener('click',() => {
         senha.style.borderColor = 'green'
         aviso2.innerHTML = ''
     }
-    
 
 })
 
