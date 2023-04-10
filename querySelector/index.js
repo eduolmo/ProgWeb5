@@ -1,25 +1,31 @@
 let cabecalho = document.querySelectorAll('.accordion-cabecalho')
 let conteudo = document.querySelectorAll('.accordion-conteudo')
 
+cabecalho[0].addEventListener('click', () => {
+    if(conteudo[0].style.display == 'none'){
+        conteudo[0].style.display = 'flex'
+    }
+    else{
+        conteudo[0].style.display = 'none'
+    }
+})
 
+cabecalho[1].addEventListener('click',() => {
+    if(conteudo[1].style.display == 'none'){
+        conteudo[1].style.display = 'flex'
+    }
+    else{
+        conteudo[1].style.display = 'none'
+    }
+})
 
-
-/*
-for(i = 0; i < cabecalho.length; i++){
-
-    cabecalho[i].addEventListener('click',() => {
-        console.log('add+')
-        console.log(conteudo[i])
-        if(conteudo[i].style.display == 'none'){
-            conteudo[i].style.display = 'flex'
-        }
-        else{
-            conteudo[i].style.display = 'none'
-        }
-    })
-
-}
-*/
-
+cabecalho[2].addEventListener('click',() => {
+    if(conteudo[2].style.display == 'none'){
+        conteudo[2].style.display = 'flex'
+    }
+    else{
+        conteudo[2].style.display = 'none'
+    }
+})
 
 
